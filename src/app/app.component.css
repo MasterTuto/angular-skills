@@ -1,4 +1,20 @@
-p {
-  font-family: Lato;
+:root {
+  --sm-breakpoint: 600px;
+  --md-breakpoint: 960px;
+  --lg-breakpoint: 1280px;
 }
 
+.stick {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.small { 
+  font-size: 0.7em;
+  margin: 0 1.4em;
+}

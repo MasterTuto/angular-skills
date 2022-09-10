@@ -1,2 +1,13 @@
 <!--TODO: melhorar o layout dos cards para exibir ao menos 2 por linha em telas > md, e pequenas (sm) 1 -->
-<app-card [card]="card" *ngFor="let card of cards"></app-card>
+
+<div class="loading" *ngIf="!cards">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+
+    <p class="loading-text title">FUN FACT:</p>
+    <p class="loading-text">{{randomFunFact}}</p>
+</div>
+
+<div id="cards">
+    <app-card [card]="card" *ngFor="let card of cards">
+    </app-card>
+</div>

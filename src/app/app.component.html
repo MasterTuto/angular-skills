@@ -1,5 +1,12 @@
-<h3>
-  My Skills
-</h3>
+<mat-toolbar color="primary" class="stick">
+  <span>My skills</span>
+
+  <span class="spacer"></span>
+
+  <span class="small">Total de likes: {{likeCount}}</span>
+  
+  <span class="small">Mais curtido: {{mostLiked ? mostLiked.name : "nenhum ainda"}}</span>
+</mat-toolbar>
+
 
 <app-dashboard></app-dashboard>

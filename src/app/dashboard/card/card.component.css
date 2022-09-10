@@ -1,3 +1,14 @@
 .example-card {
-    max-width: 400px;
-  }
+  max-width: 400px;
+  transition: all 0.6s;
+}
+
+.bg-blue {
+  background-color: #2196F3!important;
+  color: white;
+}
+
+.bg-green { 
+  background-color: #4CAF50!important;
+  color: white;
+}
